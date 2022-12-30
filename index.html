@@ -1,86 +1,766 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Your Name | vCard Portfolio</title>
-  <style>
-    /* Add your CSS styles here */
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+    <title>Mahammad Humayoo:: Personel Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+    <link rel="stylesheet" href="jquery-ui.css">
+    <script src="jquery-3.6.0.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+    <style>
+        .galleria {
+            width: 600px;
+            height: 400px;
+            background: #000
+        }
+    </style>
+    <link href="galleria/themes/classic/galleria.classic.css" rel="stylesheet" />
+    <script src="galleria/galleria.min.js"></script>
 
-    /* Style the header */
-    header {
-      background-color: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    /* Style the main content */
-    .main {
-      padding: 20px;
-    }
-
-    /* Style the vCard items */
-    .item {
-      float: left;
-      width: 25%;
-      padding: 20px;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-  </style>
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <h2>Title or Position</h2>
-  </header>
-  <div class="main">
-    <h3>About Me</h3>
-    <p>
-      Add a short bio or introduction here. This could include your work experience, education, skills, interests, and other relevant information.
-    </p>
-    <h3>vCard Portfolio</h3>
-    <div class="row">
-      <div class="item">
-        <h4>Project 1</h4>
+    <div class="container">
+        <div class="left_side">
+            <div class="profileText">
+                <div class="imgBx">
+                    <img src="1.Mahammad Humayoo.jpg" />
+                </div> <!-- ImgBx div end-->
+                <h2>Mahammad Humayoo, Ph.D.<br /><span>Senior Lecturer</span> <br /><img src="Khwopa_Logo.jpg" width="40" height="40" style="margin-top:-10px; border-radius: 20px; display: inline-block; float:left; " /><span>Khwopa Engineering College</span></h2>
+
+            </div> <!-- ProfileText div end-->
+            <div class="contactInfo">
+                <h3 class="title">Contact Info</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span class="text">++977-1-5122094 Ext. 124</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span class="text"><a href="mailto:mahammad.humayoo@khec.edu.np" title="Email" target="_blank">Email</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                        <span class="text"><a href="https://khec.edu.np/department/computer_engineering.html" title="Website" target="_blank">Website</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
+                        <span class="text"><a href="https://github.com/mhumayoo/" title="Website" target="_blank">Github</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+                        <span class="text"><a href="https://www.researchgate.net/profile/Mahammad-Humayoo" title="Website" target="_blank">ResearchGate</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
+                        <span class="text"><a href="https://www.linkedin.com/in/mahammad-humayoo-ph-d-19928a7/" title="LinkedIn" target="_blank">LinkedIn</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-facebook-official" aria-hidden="true"></i></span>
+                        <span class="text"><a href="https://www.facebook.com/mahammad.humayoo/" title="Facebook" target="_blank">Facebook</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+                        <span class="text"><a href="https://twitter.com/DrHumayoo" title="Twitter" target="_blank">Twitter</a></span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text">Bhaktapur, Bagmati, Nepal</span>
+                    </li>
+
+                </ul>
+
+            </div> <!-- contactInfo div end-->
+
+        </div> <!-- Left_side div end-->
+
+
+        <div class="right_side">
+            <!-- Right_side div start -->
+            <!-- Top Menu Start-->
+            <div class="navbar" id="tabs">
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="#tabs-1" class="navbar-link">About</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#tabs-2" class="navbar-link" data-nav-link>Education</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#tabs-3" class="navbar-link" data-nav-link>Experience</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#tabs-4" class="navbar-link" data-nav-link>Teaching</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#tabs-5" class="navbar-link" data-nav-link>Awards</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#tabs-6" class="navbar-link" data-nav-link>Talks</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#tabs-7" class="navbar-link" data-nav-link>Publications</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#tabs-8" class="navbar-link" data-nav-link>Project</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#tabs-9" class="navbar-link" data-nav-link>Students</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#tabs-10" class="navbar-link" data-nav-link>Gallery</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#tabs-11" class="navbar-link" data-nav-link>Misc</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#tabs-12" class="navbar-link" data-nav-link>Contact</a>
+                    </li>
+
+                </ul>
+                <div class="about" id="tabs-1">
+                    <h2 class="aboutTitle">About Me</h2>
+                    <p class="c">
+                        I have been working as a Senior Lecturer at Khwopa Engineering College, Purbanchal University in Nepal and previously served as a Lecturer at the School of Engineering at Pokhara University.
+                        Prior to that, I worked in the software industry as a senior programmer for over six years. Therefore, I have extensive experience in both the academic and software industries.
+                    </p>
+
+                    <p class="c">
+                        I received my Ph.D. in computer science and technology from the Key Laboratory of Network Data Science & Technology at the Institute of Computing Technology, University of Chinese Academy of Sciences (ICT-UCAS) in Beijing, China in 2020. My research, supervised by Professor Xueqi Cheng, focused on Machine Learning (ML), Deep Learning (DL), Reinforcement Learning (RL), and Big Data, particularly in the areas of parameter optimization and variable selection and online and offline policy evaluation in RL. I earned my Master of Engineering (M.E.) degree in computer science and technology from Beijing Institute of Technology (BIT) in 2015, under the supervision of Professor Yanlong Zhai. During my master's studies, I published a conference paper as the first author at the WASA 2014 international conference in Harbin, China. My master's research focused on Big Data. I received my Bachelor of Science (B.S.) degree in computer science from the National University of Computer and Emerging Sciences (NUCES-FAST) in Pakistan in 2005. I am also an Oracle Certified Professional (OCP) DBA and an Oracle Certified Associate (OCA) Developer.
+                    </p>
+                    <p class="c">
+                        I am passionate about research and am always eager to learn more and explore the fields of software engineering, programming languages, databases, and artificial intelligence. My research interests include Machine Learning, Deep Learning, Reinforcement Learning, Computer Vision, and Big Data etc.
+                    </p>
+
+                </div> <!-- About div end-->
+
+                <div class="about" id="tabs-2">
+                    <h2 class="aboutTitle">Education</h2>
+
+                    <table class="tbledu">
+                        <thead>
+                            <tr>
+                                <th>From</th>
+                                <th>To</th>
+                                <th>Degree</th>
+                                <th>University</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>09/2015</td>
+                                <td>01/2020</td>
+                                <td>Ph.D. in Computer Science and Technology</td>
+                                <td>Institute of Computing Technology, University of Chinese Academy of Sciences (UCAS)</td>
+                            </tr>
+                            <tr>
+                                <td>09/2012</td>
+                                <td>03/2015</td>
+                                <td>M.E. in Computer Science and Technology</td>
+                                <td>Beijing Institute of Technology (BIT)</td>
+                            </tr>
+                            <tr>
+                                <td>08/2001</td>
+                                <td>07/2005</td>
+                                <td>B.S. in Computer Science</td>
+                                <td>National University of Computer and Emerging Sciences (NUCES-FAST)</td>
+                            </tr>
+                            <tr>
+                                <td>01/2007</td>
+                                <td>11/2007</td>
+                                <td>Oracle Certified Professional (OCP) DBA</td>
+                                <td>Oracle Corporation, USA</td>
+                            </tr>
+                            <tr>
+                                <td>01/2007</td>
+                                <td>11/2007</td>
+                                <td>Oracle Certified Associate (OCA) Developer</td>
+                                <td>Oracle Corporation, USA</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div> <!-- About div for Education end-->
+
+                <div class="about" id="tabs-3">
+                    <h2 class="aboutTitle">Professional Experience</h2>
+                    <table class="tbledu">
+                        <thead>
+                            <tr>
+                                <th>From</th>
+                                <th>To</th>
+                                <th>Position</th>
+                                <th>Organization</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01/2022</td>
+                                <td>Present</td>
+                                <td>Senior Lecturer</td>
+                                <td>Khwopa Engineering College, Nepal</td>
+                            </tr>
+                            <tr>
+                                <td>02/2021</td>
+                                <td>06/2021</td>
+                                <td>Lecturer</td>
+                                <td>School of Engineering, Pokhara University, Nepal</td>
+                            </tr>
+                            <tr>
+                                <td>11/2008</td>
+                                <td>08/2012</td>
+                                <td>Senior Programmer</td>
+                                <td>Web Search Professional (A European Software Outsourcing Company)</td>
+                            </tr>
+                            <tr>
+                                <td>01/2008</td>
+                                <td>10/2008</td>
+                                <td>Software Developer</td>
+                                <td>Hitechvalley iNet, Nepal</td>
+                            </tr>
+                            <tr>
+                                <td>01/2006</td>
+                                <td>12/2007</td>
+                                <td>Software Developer</td>
+                                <td>FAST-NU, Pakistan</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+                </div> <!-- About div for Experience end-->
+
+
+                <div class="about skills1" id="tabs-4">
+                    <h2 class="aboutTitle">Taught Courses</h2>
+                    <table class="tbledu">
+                        <thead>
+                            <tr>
+                                <th>Course Name</th>
+                                <th>Semester</th>
+                                <th>Year</th>
+                                <th>University/College</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Artificial Intelligence</td>
+                                <td>Fall</td>
+                                <td>2022</td>
+                                <td>Khwopa Engineering College, Nepal</td>
+                            </tr>
+                            <tr>
+                                <td>Programming in C</td>
+                                <td>Fall</td>
+                                <td>2022</td>
+                                <td>Khwopa Engineering College, Nepal</td>
+                            </tr>
+                            <tr>
+                                <td>Database Management System (DBMS)</td>
+                                <td>Spring</td>
+                                <td>2022</td>
+                                <td>Khwopa Engineering College, Nepal</td>
+                            </tr>
+                            <tr>
+                                <td>Introduction to SQL</td>
+                                <td>Spring</td>
+                                <td>2022</td>
+                                <td>Khwopa Engineering College, Nepal</td>
+                            </tr>
+                            <tr>
+                                <td>Elective-II C#.Net Asp.net MVC5</td>
+                                <td>Spring</td>
+                                <td>2022</td>
+                                <td>Khwopa Engineering College, Nepal</td>
+                            </tr>
+                            <tr>
+                                <td>Database Management System (DBMS) </td>
+                                <td>Spring</td>
+                                <td>2021</td>
+                                <td>School of Engineering, Pokhara University, Nepal</td>
+                            </tr>
+                            <tr>
+                                <td>Introduction to SQL </td>
+                                <td>Spring</td>
+                                <td>2021</td>
+                                <td>School of Engineering, Pokhara University, Nepal</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+
+
+                </div> <!-- About skills div for professional skills end-->
+
+                <div class="about skills1" id="tabs-5">
+                    <h2 class="aboutTitle">Awards</h2>
+                    <div class="box">
+                        <div class="text">
+                            <h4>CAS-TWAS scholarship for PhD study</h4>
+                            <p class="c">
+                                I have been awarded a fellowship by the Chinese
+                                Academy of Sciences (CAS), China and The World Academy of Sciences (TWAS), Italy, to pursue
+                                a Ph.D. degree at the Institute of Computing Technology, Chinese Academy of Sciences.
+                            </p>
+                        </div> <!-- Text div  end-->
+                    </div> <!-- Box div  end-->
+
+                    <div class="box">
+                        <div class="text">
+                            <h4>CSC scholarship for master study</h4>
+                            <p class="c">
+                                I have been awarded fully funded scholarship by the
+                                Chinese Scholarship Council (CSC) for a master’s degree at Beijing Institute of Technology,
+                                Beijing China.
+                            </p>
+                        </div> <!-- Text div  end-->
+                    </div> <!-- Box div  end-->
+                    <div class="box">
+
+                        <div class="text">
+                            <h4>Interest free study loan for Bachelor study</h4>
+                            <p class="c">
+                                I have been awarded interest free study loan by
+                                National University of Computer & Emerging Sciences - FAST for a Bachelor’s degree at National
+                                University of Computer & Emerging Sciences, Pakistan.
+                            </p>
+                        </div> <!-- Text div  end-->
+                    </div> <!-- Box div  end-->
+                    <div class="box">
+                        <div class="text">
+                            <h4>Excellent student award (master study) 2012-2013</h4>
+                            <p class="c">
+                                I received a "Excellent Foreign Student Award 2012-2013" at Beijing Institute of Technology, Beijing, China.
+                            </p>
+                        </div> <!-- Text div  end-->
+                    </div> <!-- Box div  end-->
+                    <div class="box">
+                        <div class="text">
+                            <h4>Distinguished student award (master study) 2013-2014</h4>
+                            <p class="c">
+                                I received a "Distinguished Foreign Student Award 2013-2014" at Beijing Institute of Technology, Beijing, China.
+                            </p>
+                        </div> <!-- Text div  end-->
+                    </div> <!-- Box div  end-->
+                    <div class="box">
+                        <div class="text">
+                            <h4>2015 UCAS winter school</h4>
+                            <p class="c">
+                                Certificate for attending 2015 UCAS winter school at Lanzhou, China.
+                            </p>
+                        </div> <!-- Text div  end-->
+                    </div> <!-- Box div  end-->
+                    <div class="box">
+                        <div class="text">
+                            <h4>2016 UCAS winter school</h4>
+                            <p class="c">
+                                Certificate for attending 2016 UCAS winter school at Shenzhen, China.
+                            </p>
+                        </div> <!-- Text div  end-->
+                    </div> <!-- Box div  end-->
+                    <div class="box">
+                        <div class="text">
+                            <h4>2017 UCAS winter school</h4>
+                            <p class="c">
+                                Certificate for attending 2017 UCAS winter school at Sanya, China.
+                            </p>
+                        </div> <!-- Text div  end-->
+                    </div> <!-- Box div  end-->
+                </div> <!-- About div for awards end-->
+
+                <div class="about" id="tabs-6">
+                    <h2 class="aboutTitle">INVITED TALKS / PRESENTATION</h2>
+                    <div class="box">
+                        <div class="text">
+                            <h4>2018 24th International Conference on Pattern Recognition (ICPR), August 2018, Beijing, China.</h4>
+                            <p class="c">
+                                I was invited to present my my paper title "Model-free Knockoffs for SLOPE-Adaptive Variable Selection with Controlled False Discovery Rate" at ICPR, Beijing, China.
+                            </p>
+                            <div class="imgBx">
+                                <img src="Talk1.jpg" width="600" height="400" />
+                            </div> <!-- ImgBx div end-->
+                        </div> <!-- Text div  end-->
+                    </div> <!-- Box div  end-->
+
+                    <div class="box">
+                        <div class="text">
+                            <h4>
+                                2014 9th International Conference on Wireless Algorithms, Systems, and Applications (WASA), June 2014, Harbin, China.
+                            </h4>
+                            <p class="c">
+                                I was invited to present my my paper title "Operator scale out using time utility function in big data stream processing" at WASA, Harbin, China.
+                            </p>
+                            <div class="imgBx">
+                                <img src="Talk2.jpg" width="600" height="400" />
+                            </div> <!-- ImgBx div end-->
+                        </div> <!-- Text div  end-->
+                    </div> <!-- Box div  end-->
+
+                </div> <!-- About tab-6 div end-->
+
+    <div class="about" id="tabs-7">
+        <h2 class="aboutTitle">Publications</h2>
         <p>
-          Add a brief description of your project here. This could include the project title, a brief overview of what it is, and your role in the project.
+            Please click the link below to see pubications.<br />
+           <span class="text"><a href="https://scholar.google.com/citations?user=NmrOni0AAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></span>
         </p>
-        <ul>
-          <li>
-            <strong>Phone:</strong> 555-555-5555
-          </li>
-          <li>
-            <strong>Email:</strong> yourname@example.com
-          </li>
-          <li>
-            <strong>Website:</strong> <a href="https://www.yoursite.com">www.yoursite.com</a>
-          </li>
-        </ul>
-      </div>
-      <div class="item">
-        <h4>Project 2</h4>
+
+    </div> <!-- About tab-7 div end-->
+
+    <div class="about" id="tabs-8">
+        <h2 class="aboutTitle">Projects</h2>
+        <h3 class="aboutTitle">Projects: RESEARCH /ACADEMIC (Under my supervision)</h3>
+
+        <div class="box">
+            <div class="text">
+                <h4>QUASI DF-GAN TEXT-TO-IMAGE GENERATION: ongoing (Year: 2022)</h4>
+                <p class="c">
+                    The goal of a text to image (T2I) generation mo del is to pro duce photorealistic
+                    images that are semantically compatible with the text des criptions.
+                </p>
+            </div> <!-- Text div  end-->
+        </div> <!-- Box div  end-->
+
+        <div class="box">
+            <div class="text">
+                <h4>AMERICAN SIGN LANGUAGE (ASL) INTERPRETATION USING CNN (Year: 2022)</h4>
+                <p class="c">
+                    Sign language is one of the oldest and most natural form of language for communication,
+                    however most people do not know sign language and interpreters are very difficult to come by,
+                    we have come up with a real time method using neural networks for fingerspelling based
+                    American sign language. In our method, the hand is first passed through a filter and after the
+                    filter is applied the hand is passed through a classifier which predicts the class of the hand
+                    gestures.<br />
+
+                    We are trying to interpret sign language based on CNN using python in order to minimize the
+                    verbal exchange gap among D&M and non-D&M people turns into a want to make certain
+                    effective conversation among all.
+
+                </p>
+            </div> <!-- Text div  end-->
+        </div> <!-- Box div  end-->
+        <h3 class="aboutTitle">Projects: INDUSTRY (ASP.NET) </h3>
+        <div class="box">
+            <div class="text">
+                <h4>Zoud Force Mobile Web</h4>
+                <p class="c">
+                    <b>Tools:</b> Asp.net MVC 3.0, MS SQL Server 2008, jQuery, PhoneGap Framework.<br />
+                    This is mobile web and mobile app product. This is like social networking site.
+
+                </p>
+            </div> <!-- Text div  end-->
+        </div> <!-- Box div  end-->
+
+        <div class="box">
+            <div class="text">
+                <h4>Holmgrens Using Sitefinity CMS </h4>
+                <p class="c">
+                    <b>Tools:</b> Sitefinity CMS, ASP.Net, C#, jQuery, Ajax, MS SQL Server.<br />
+                    This project is very huge and advanced. This is about car manufacturer and seller. The main
+                    attraction of the project was that this project was made using Sitefinity CMS. Sitefinity CMS has a lot
+                    of popular future like drag and drop etc. you can find more about Sitefinity from sitefinity.com.
+
+                </p>
+            </div> <!-- Text div  end-->
+        </div> <!-- Box div  end-->
+
+        <div class="box">
+            <div class="text">
+                <h4>CSR Using Sitefinity CMS </h4>
+                <p class="c">
+                    <b>Tools:</b> Sitefinity CMS, ASP.Net, C#, jQuery, Ajax, MS SQL Server.<br />
+                    This site contains the information about social responsibility. The main attraction of the project was
+                    that this project was made using Sitefinity CMS. Sitefinity CMS has a lot of popular future like drag
+                    and drop etc. you can find more about Sitefinity from sitefinity.com.
+
+                </p>
+            </div> <!-- Text div  end-->
+        </div> <!-- Box div  end-->
+
+        <div class="box">
+            <div class="text">
+                <h4>Bug Reporter</h4>
+                <p class="c">
+                    <b>Tools:</b> Asp.Net, C#, MS SQL Server, jQuery, Ajax.<br />
+                    This project is bug reporting tool used by client, QA, Software Developer to report bugs.in this
+                    project, every user has role like developer, QA, Customer etc. Certain project assigned to every user.
+                    If any bug reported on any project, then bug will go to user account who has assigned this project for
+                    developing. After this developer remove the bugs and submit the comment, this comment will
+                    automatically come to QA account who has assigned this project. QA will test bug and send report to
+                    client.
+
+                </p>
+            </div> <!-- Text div  end-->
+        </div> <!-- Box div  end-->
+        <h3 class="aboutTitle">Projects: INDUSTRY (PHP) </h3>
+        <div class="box">
+            <div class="text">
+                <h4>iPhone & Android Web Application: DATEORHATE</h4>
+                <p class="c">
+                    <b>Tools:</b> Jqtouch iPhone Web Framework, Jpint iPhone/Android Web Framework,
+                    CodeIgniter Framework, PHP, MYSQL, JavaScript, Ajax, Ajax Push & Pull Technique, HTML,
+                    Zend Studio, JQuery, Google Map, IPhone Geo Location.<br />
+                    This is very huge project. Date or Hate is real time dating software for iPhone and smart phones like
+                    android. It is a dating application utilizing the location of two persons at any given time. Date or hate
+                    automatically generates matches for you based on your current location and the location of people
+                    who match your profile. Automatically Matching People based on their real time location. DateorHate
+                    provide you with matches over 1 meter accuracy. Date or hate members can be matched within few
+                    meters or anywhere in the world. if somebody login to this application and he/she is view profile of
+                    his/her match partner, then his/her match partner get notification in that real time, this is user is
+                    checking your profile. So that you can communicate with that partner in the real time. A lot of
+                    functionality is also there like sending SMS, share geo location, view geo location Google map etc.
+
+                </p>
+            </div> <!-- Text div  end-->
+        </div> <!-- Box div  end-->
+
+        <div class="box">
+            <div class="text">
+                <h4>Movie Automization, PDF Generation & Image cropping</h4>
+                <p class="c">
+                    <b>Tools:</b> PHP, MYSQL, JavaScript, Ajax, HTML, Dream weaver, JQuery, PHP JAVA Bridge,
+                    adobe acrobat scripting.<br />
+                    This is very huge project. all this we are doing in pdf document because we made CMS in pdf.
+                    Current trend is to make CMS in html page using any technology but we specially made for movie
+                    add CMS in pdf. This system is use to automize the movies adds.in this system first crops the images
+                    of adds
+                    And customize it. Then we generate the pdf with customize images and dynamic populating pdf
+                    document and send to print for adds. I did all task alone from beginning to the end.
+
+                </p>
+            </div> <!-- Text div  end-->
+        </div> <!-- Box div  end-->
+
+        <div class="box">
+            <div class="text">
+                <h4>IAN Greenairfares.com World wide Air Line Booking System</h4>
+                <p class="c">
+                    <b>Tools:</b> PHP, MYSQL, JavaScript, Ajax, HTML, Dream weaver, Web Service
+                    Description of Project.<br />
+                    This system is use to reserve the airlines ticket online for worldwide airlines. This is one of the best
+                    systems in air reservation area. This is also very huge project. I did all task alone from beginning to
+                    the end.
+
+                </p>
+            </div> <!-- Text div  end-->
+        </div> <!-- Box div  end-->
+
+    </div> <!-- About tab-8 div end-->
+
+    <div class="about" id="tabs-9">
+        <h2 class="aboutTitle">PhDs</h2>
         <p>
-          Add a brief description of your project here. This could include the project title, a brief overview of what it is, and your role in the project.
+            Coming soon.
         </p>
-        <ul>
-          <li>
-            <strong>Phone:</strong> 555-555-5555
-          </li>
-          <li>
-            <strong>Email:</strong> yourname@example.com
-          </li>
-          <li>
-            <strong>Website:</strong> <a href="https://www.yoursite.com">www.yoursite.com</a>
-          </li>
-        </ul>
-      </div>
-      <div class="item">
-        <h4>Project 3</h4>
+
+        <h2 class="aboutTitle">Masters</h2>
         <p>
-          Add a brief description of your project here. This could include the project title, a brief overview of what it is, and your role in the project.
+            Coming soon.
+        </p>
+        <h2 class="aboutTitle">Undergraduates</h2>
+        <h4 class="aboutTitle">Current Students</h4>
+        <table class="tbledu">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Class Year</th>
+                    <th>University/College</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Aditya Jaishi</td>
+                    <td>2018</td>
+                    <td> Khwopa College of Engineering, Tribhuvan University</td>
+                </tr>
+                <tr>
+                    <td>Amit Duwal</td>
+                    <td>2018</td>
+                    <td> Khwopa College of Engineering, Tribhuvan University</td>
+                </tr>
+                <tr>
+                    <td>Anish Machamasi </td>
+                    <td>2018</td>
+                    <td> Khwopa College of Engineering, Tribhuvan University</td>
+                </tr>
+                <tr>
+                    <td>Umesh Mahato </td>
+                    <td>2018</td>
+                    <td> Khwopa College of Engineering, Tribhuvan University</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <h4 class="aboutTitle">Past Students</h4>
+        <table class="tbledu">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Class Year</th>
+                    <th>University/College</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ayush Raja Bijukchhe</td>
+                    <td>2017</td>
+                    <td>Khwopa Engineering College, Purbanchal University</td>
+                </tr>
+                <tr>
+                    <td>Bibek Pradhan</td>
+                    <td>2017</td>
+                    <td>Khwopa Engineering College, Purbanchal University</td>
+                </tr>
+                <tr>
+                    <td>Bijay Kila Shrestha</td>
+                    <td>2017</td>
+                    <td>Khwopa Engineering College, Purbanchal University</td>
+                </tr>
+                <tr>
+                    <td>Bishal Paudel</td>
+                    <td>2017</td>
+                    <td>Khwopa Engineering College, Purbanchal University</td>
+                </tr>
+                <tr>
+                    <td>Srijan Dangol</td>
+                    <td>2017</td>
+                    <td>Khwopa Engineering College, Purbanchal University</td>
+                </tr>
+            </tbody>
+        </table>
+        
+
+    </div> <!-- About tab-9 div end-->
+
+        <div class="about" id="tabs-10">
+            <h2 class="aboutTitle">Gallery</h2>
+            <p>
+                <div class="galleria">
+                    <img src="Images/1.jpg" width="600" height="400">
+                    <img src="Images/2.jpg" width="600" height="400">
+                    <img src="Images/3.jpg" width="600" height="400">
+                    <img src="Images/4.jpg" width="600" height="400">
+                    <img src="Images/5.jpg" width="600" height="400">
+                    <img src="Images/6.jpg" width="600" height="400">
+                    <img src="Images/7.jpg" width="600" height="400">
+                    <img src="Images/8.jpg" width="600" height="400">
+                    <img src="Images/9.jpg" width="600" height="400">
+                    <img src="Images/10.jpg" width="600" height="400">
+                    <img src="Images/11.jpg" width="600" height="400">
+                    <img src="Images/12.jpg" width="600" height="400">
+                    <img src="Images/13.jpg" width="600" height="400">
+                    <img src="Images/14.jpg" width="600" height="400">
+                    <img src="Images/15.jpg" width="600" height="400">
+                    <img src="Images/16.jpg" width="600" height="400">
+                    <img src="Images/17.jpg" width="600" height="400">
+                    <img src="Images/18.jpg" width="600" height="400">
+                    <img src="Images/19.jpg" width="600" height="400">
+                    <img src="Images/20.jpg" width="600" height="400">
+                    <img src="Images/21.jpg" width="600" height="400">
+                </div>
+                <script type="text/javascript">
+                    <!--
+                    (function () {
+                        Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+                        //Galleria.run('.galleria');
+                        Galleria.run('.galleria', {
+                            height: 400
+ 
+                        });
+                    }());
+                    -->
+
+                </script>
+            </p>
+
+        </div> <!-- About tab-10 div end-->
+
+        <div class="about" id="tabs-11">
+            <h2>Miscellaneous</h2>
+            <h3 class="aboutTitle">Known Languages</h3>
+            <p>
+                <ul>
+                    <li>
+                        English
+                    </li>
+                    <li>
+                        Chinese
+                    </li>
+                    <li>
+                        Nepali
+                    </li>
+                    <li>
+                        Urdu
+                    </li>
+                    <li>
+                        Hindi
+                    </li>
+                    <li>
+                        Bhojpuri
+                    </li>
+                </ul>
+            </p>
+            <h3 class="aboutTitle">PROFESSIONAL DEVELOPMENT / TRAINING</h3>
+            <p>
+                <ul>
+                    <li>
+                        Introduction to Microsoft Teams
+                    </li>
+                    <li>
+                        Introduction to Zoom
+                    </li>
+                    <li>
+                        Microsoft Web Tools Training
+                    </li>
+                </ul>
+            </p>
+            <h3 class="aboutTitle">Acknowledgement</h3>
+            <p>
+                <ul>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=hnjHCmaUVPg&t=250s">https://www.youtube.com/watch?v=hnjHCmaUVPg&t=250s</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=SoxmIlgf2zM">https://www.youtube.com/watch?v=SoxmIlgf2zM</a>
+                    </li>
+                   
+                </ul>
+            </p>
+
+        </div> <!-- About tab-11 div end-->
+
+        <div class="about" id="tabs-12">
+            <h2 class="aboutTitle">Contact Me</h2>
+            <p>
+                Dr. Mahammad Humayoo<br />
+                Khwopa Engineering College<br />
+                P.O. Box: 84, Libali, Bhaktapur - 8, Nepal<br />
+                <b>Email: </b><a href="mailto:mahammad.humayoo@khec.edu.np" target="_blank">mahammad.humayoo@khec.edu.np</a><br />
+                <b>Phone: </b> ++977-1-5122094 Ext. 124
+
+
+            </p>
+
+        </div> <!-- About tab-12 div end-->
+    </div> <!-- Top Menu End-->
+    </div> <!-- Right_side div end-->
+    </div> <!-- container div end-->
+
+
+</body>
+</html>
